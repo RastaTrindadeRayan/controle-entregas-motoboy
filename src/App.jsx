@@ -284,7 +284,10 @@ function App() {
     const totalDiarias = calcularTotalDiariasPorData(data)
     const totalGeral = totalEntregas + totalDiarias
 
-    const dataFormatada = new Date(data).toLocaleDateString('pt-BR', {
+    // Corrigir problema de fuso horário na formatação da data
+    const [ano, mes, dia] = data.split('-')
+    const dataCorreta = new Date(parseInt(ano), parseInt(mes) - 1, parseInt(dia))
+    const dataFormatada = dataCorreta.toLocaleDateString('pt-BR', {
       weekday: 'long',
       year: 'numeric',
       month: 'long',
@@ -651,16 +654,21 @@ function App() {
                         <SelectValue placeholder="Escolha uma data..." />
                       </SelectTrigger>
                       <SelectContent>
-                        {obterDatasDisponiveis().map(data => (
-                          <SelectItem key={data} value={data}>
-                            {new Date(data).toLocaleDateString('pt-BR', {
-                              weekday: 'long',
-                              year: 'numeric',
-                              month: 'long',
-                              day: 'numeric'
-                            })}
-                          </SelectItem>
-                        ))}
+                        {obterDatasDisponiveis().map(data => {
+                          // Corrigir problema de fuso horário na formatação da data
+                          const [ano, mes, dia] = data.split('-')
+                          const dataCorreta = new Date(parseInt(ano), parseInt(mes) - 1, parseInt(dia))
+                          return (
+                            <SelectItem key={data} value={data}>
+                              {dataCorreta.toLocaleDateString('pt-BR', {
+                                weekday: 'long',
+                                year: 'numeric',
+                                month: 'long',
+                                day: 'numeric'
+                              })}
+                            </SelectItem>
+                          )
+                        })}
                       </SelectContent>
                     </Select>
                   </div>
@@ -784,7 +792,12 @@ function App() {
                   {obterEstatisticasSemana().map((dia) => (
                     <div key={dia.data} className="flex items-center justify-between p-3 bg-gray-50 rounded-lg">
                       <div className="flex-1">
-                        <p className="font-medium">{dia.diaSemana}. {new Date(dia.data).getDate()} de {new Date(dia.data).toLocaleDateString('pt-BR', { month: 'short' })}</p>
+                        <p className="font-medium">{dia.diaSemana}. {(() => {
+                          // Corrigir problema de fuso horário na formatação da data
+                          const [ano, mes, diaNum] = dia.data.split('-')
+                          const dataCorreta = new Date(parseInt(ano), parseInt(mes) - 1, parseInt(diaNum))
+                          return `${dataCorreta.getDate()} de ${dataCorreta.toLocaleDateString('pt-BR', { month: 'short' })}`
+                        })()}</p>
                         <p className="text-sm text-gray-600">
                           {dia.entregas} entregas
                           {dia.diarias > 0 && ` + ${dia.diarias} diária(s)`}
@@ -825,12 +838,17 @@ function App() {
                 <div>
                   <Label>Data</Label>
                   <p className="text-sm text-gray-600">
-                    {new Date(diaEdicaoSemana.data).toLocaleDateString('pt-BR', {
-                      weekday: 'long',
-                      year: 'numeric',
-                      month: 'long',
-                      day: 'numeric'
-                    })}
+                    {(() => {
+                      // Corrigir problema de fuso horário na formatação da data
+                      const [ano, mes, dia] = diaEdicaoSemana.data.split('-')
+                      const dataCorreta = new Date(parseInt(ano), parseInt(mes) - 1, parseInt(dia))
+                      return dataCorreta.toLocaleDateString('pt-BR', {
+                        weekday: 'long',
+                        year: 'numeric',
+                        month: 'long',
+                        day: 'numeric'
+                      })
+                    })()}
                   </p>
                 </div>
                 <div>

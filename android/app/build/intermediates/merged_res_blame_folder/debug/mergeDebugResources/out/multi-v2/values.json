@@ -38,25 +38,6 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Rayan\\Desktop\\app-entregas-v2-com-diaria\\android\\app\\src\\main\\res\\values\\styles.xml",
-                    "from": {
-                        "startLines": "4,11,18",
-                        "startColumns": "4,4,4",
-                        "startOffsets": "93,413,664",
-                        "endLines": "9,15,20",
-                        "endColumns": "12,12,12",
-                        "endOffsets": "407,657,810"
-                    },
-                    "to": {
-                        "startLines": "337,343,348",
-                        "startColumns": "4,4,4",
-                        "startOffsets": "22213,22497,22746",
-                        "endLines": "342,347,350",
-                        "endColumns": "12,12,12",
-                        "endOffsets": "22492,22741,22892"
-                    }
-                },
-                {
                     "source": "C:\\Users\\Rayan\\.gradle\\caches\\8.13\\transforms\\c5079c673dbc6d6c5443a20cbd5c3c36\\transformed\\activity-1.9.2\\res\\values\\values.xml",
                     "from": {
                         "startLines": "2,3",
@@ -71,6 +52,40 @@
                         "startOffsets": "17155,18242",
                         "endColumns": "41,59",
                         "endOffsets": "17192,18297"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Rayan\\Downloads\\app-entregas-v2-final\\node_modules\\.pnpm\\@capacitor+android@7.4.3_@capacitor+core@7.4.3\\node_modules\\@capacitor\\android\\capacitor\\build\\intermediates\\packaged_res\\debug\\packageDebugResources\\values\\values.xml",
+                    "from": {
+                        "startLines": "2,3,4,5",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "100,175,251,331",
+                        "endColumns": "74,75,79,79",
+                        "endOffsets": "170,246,326,406"
+                    },
+                    "to": {
+                        "startLines": "39,40,41,327",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "2725,2800,2876,21436",
+                        "endColumns": "74,75,79,79",
+                        "endOffsets": "2795,2871,2951,21511"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Rayan\\Downloads\\app-entregas-v2-final\\android\\app\\src\\main\\res\\values\\ic_launcher_background.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "56",
+                        "endOffsets": "107"
+                    },
+                    "to": {
+                        "startLines": "52",
+                        "startColumns": "4",
+                        "startOffsets": "3637",
+                        "endColumns": "56",
+                        "endOffsets": "3689"
                     }
                 },
                 {
@@ -112,23 +127,6 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Rayan\\Desktop\\app-entregas-v2-com-diaria\\android\\app\\src\\main\\res\\values\\strings.xml",
-                    "from": {
-                        "startLines": "2,5,4,3",
-                        "startColumns": "4,4,4,4",
-                        "startOffsets": "55,244,182,113",
-                        "endColumns": "57,66,61,68",
-                        "endOffsets": "108,306,239,177"
-                    },
-                    "to": {
-                        "startLines": "318,326,328,331",
-                        "startColumns": "4,4,4,4",
-                        "startOffsets": "20800,21369,21516,21702",
-                        "endColumns": "57,66,61,68",
-                        "endOffsets": "20853,21431,21573,21766"
-                    }
-                },
-                {
                     "source": "C:\\Users\\Rayan\\.gradle\\caches\\8.13\\transforms\\41de56a24403f3c26f401af600d6ccc4\\transformed\\lifecycle-runtime-2.6.2\\res\\values\\values.xml",
                     "from": {
                         "startLines": "2",
@@ -143,6 +141,25 @@
                         "startOffsets": "18199",
                         "endColumns": "42",
                         "endOffsets": "18237"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Rayan\\Downloads\\app-entregas-v2-final\\android\\app\\src\\main\\res\\values\\styles.xml",
+                    "from": {
+                        "startLines": "4,11,18",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "93,413,664",
+                        "endLines": "9,15,20",
+                        "endColumns": "12,12,12",
+                        "endOffsets": "407,657,810"
+                    },
+                    "to": {
+                        "startLines": "337,343,348",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "22213,22497,22746",
+                        "endLines": "342,347,350",
+                        "endColumns": "12,12,12",
+                        "endOffsets": "22492,22741,22892"
                     }
                 },
                 {
@@ -203,20 +220,20 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Rayan\\Desktop\\app-entregas-v2-com-diaria\\node_modules\\.pnpm\\@capacitor+android@7.4.3_@capacitor+core@7.4.3\\node_modules\\@capacitor\\android\\capacitor\\build\\intermediates\\packaged_res\\debug\\packageDebugResources\\values\\values.xml",
+                    "source": "C:\\Users\\Rayan\\Downloads\\app-entregas-v2-final\\android\\app\\src\\main\\res\\values\\strings.xml",
                     "from": {
-                        "startLines": "2,3,4,5",
+                        "startLines": "2,5,4,3",
                         "startColumns": "4,4,4,4",
-                        "startOffsets": "100,175,251,331",
-                        "endColumns": "74,75,79,79",
-                        "endOffsets": "170,246,326,406"
+                        "startOffsets": "55,244,182,113",
+                        "endColumns": "57,66,61,68",
+                        "endOffsets": "108,306,239,177"
                     },
                     "to": {
-                        "startLines": "39,40,41,327",
+                        "startLines": "318,326,328,331",
                         "startColumns": "4,4,4,4",
-                        "startOffsets": "2725,2800,2876,21436",
-                        "endColumns": "74,75,79,79",
-                        "endOffsets": "2795,2871,2951,21511"
+                        "startOffsets": "20800,21369,21516,21702",
+                        "endColumns": "57,66,61,68",
+                        "endOffsets": "20853,21431,21573,21766"
                     }
                 },
                 {
@@ -236,23 +253,6 @@
                         "endLines": "2026,2032,2042,3105,3109",
                         "endColumns": "24,24,24,24,24",
                         "endOffsets": "131582,131760,132044,169308,169435"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\Rayan\\Desktop\\app-entregas-v2-com-diaria\\android\\app\\src\\main\\res\\values\\ic_launcher_background.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "56",
-                        "endOffsets": "107"
-                    },
-                    "to": {
-                        "startLines": "52",
-                        "startColumns": "4",
-                        "startOffsets": "3637",
-                        "endColumns": "56",
-                        "endOffsets": "3689"
                     }
                 },
                 {
